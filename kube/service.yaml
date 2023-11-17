@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: dellawills-service
+  name: basictest-service
   labels:
-    service: dellawills-service
+    service: basictest-service
 spec:
   selector:
-    app: dellawills
+    app: basictest
   type: NodePort
   ports:
     - port: 9000

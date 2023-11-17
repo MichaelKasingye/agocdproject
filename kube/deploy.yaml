@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dellawills-deployment
+  name: basictest-deployment
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: dellawills
+      app: basictest
   template:
     metadata:
       labels:
-        app: dellawills
+        app: basictest
     spec:
       containers:
-      - name: dellawills
+      - name: basictest
         image: emmamichael/agocdproject:latest
         ports:
         - containerPort: 9000

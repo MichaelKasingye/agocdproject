@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: dellawills
+  name: basictest
   namespace: argocd
 spec:
   project: default
 
   source:
-    repoURL: https://github.com/denishjackson1/dellawillent.git
+    repoURL: https://github.com/MichaelKasingye/agocdproject.git
     targetRevision: HEAD
     path: kube
   destination: 
