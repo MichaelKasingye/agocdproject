@@ -16,4 +16,4 @@ spec:
       - name: basictest
         image: emmamichael/agocdproject:latest
         ports:
-        - containerPort: 9000
+        - containerPort: 8000
